@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VerLens | Deepfake Detection</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h1>VerLens</h1>
+            <p class="catchphrase">See the Truth, Frame by Frame.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- FORM submits to Spring Boot -->
+        <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+            <div class="upload-section">
+                <input type="file" id="fileInput" name="file" accept="image/*" required />
+                <button type="submit" id="analyseBtn" class="analyse-btn">Analyse</button>
+            </div>
+        </form>
+
+        <p class="intro">
+            Worried about being fooled by AI-generated images? Upload a photo and let VerLens uncover the truth behind
+            the pixels.
+        </p>
+    </div>
+
+    <footer>&copy; 2025 VerLens. All rights reserved.</footer>
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
